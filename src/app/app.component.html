@@ -1,1 +1,27 @@
+<header>
+  <div class="main-menu-block">
+    <div class="contacts"><p>Contacts, delivery information</p></div>
+  </div>
+  <div class="header-menu-block">
+    <div class="logo">
+      <h2>Sewing Art Now</h2>
+    </div>
+    <div class="links">
+      <nav>
+        <ul class="mainnav">
+          <li>
+            <a
+              routerLink=""
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              >Home</a
+            >
+          </li>
+          <li><a routerLink="/shop" routerLinkActive="active">Shop</a></li>
+          <li><a routerLink="/test" routerLinkActive="active">Test</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
 <router-outlet></router-outlet>

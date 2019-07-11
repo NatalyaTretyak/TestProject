@@ -5,12 +5,22 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { ShopComponent } from './shop/shop.component';
+import { TestComponent } from './test/test.component';
 
-const routes: Routes = [{ path: '', component: HeaderComponent }];
+const routes: Routes = [
+  { path: '', component: HeaderComponent },
+  { path: 'shop', component: ShopComponent },
+  { path: 'test', component: TestComponent }
+];
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(routes)],
+  declarations: [AppComponent, HeaderComponent, ShopComponent, TestComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule.forRoot(routes)
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

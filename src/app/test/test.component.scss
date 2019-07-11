@@ -1,3 +1,15 @@
+.green {
+  color: #679b00;
+}
+
+.pink {
+  color: #ff7373;
+}
+
+.mblue {
+  color: #009999;
+}
+
 .main-container {
   display: flex;
   justify-content: center;
@@ -5,8 +17,4 @@
 
 .info-main-container {
   width: 90%;
-}
-
-i {
-  font-size: 48px;
 }
